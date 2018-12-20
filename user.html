@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iReporter | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+</head>
+<body id="user-page">
+
+    <header>
+        <div class="top-bar wrapper-fixed">
+            <div class="logo-header">
+                <img src="./iReporter logo white.png" alt="iReporter Logo">
+            </div>
+            
+            <div class="main-nav">
+                
+                <ul>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li id="createModal"><a href="#" class="btn btn-small-white-border"> <i class="fas fa-plus" style="padding-right:10px;"></i>Create Incidence</a></li>
+                    <li><a href="./login.html"><i class="fas fa-user"></i>Log Out</a></li>
+                    
+                </ul>
+                
+                <div class="dropdown">
+                    <a href="#" class=" menu-bars">
+                        <span class="open-slide">MENU <i class="fas fa-bars"></i> </span>
+                    </a>
+                    <div class="dropdown-content">
+                            <a href="./index.html">Notifications</a>                            
+                            <a href="./signup.html">Sign Up</a>
+                            <a href="./login.html">Log Out</a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>     
+
+    </header>
+
+    <section class="main-user">
+
+        <div >
+            <div class="action-side">
+                <!-- <ul>
+                    <li>Red Flags <span class="indidcators">1</span></li>
+                    <li>Inteventions <span class="indidcators">4</span></li>
+                    <li>Drafts <span class="indidcators">1</span></li>
+                </ul> -->
+                <h4 style="text-align:center;">My Records</h4>
+                <a href="#">Red Flags <span class="indidcators">1</span></a>
+                <a href="#">Inteventions <span class="indidcators">4</span></a>
+                <a href="#">Drafts <span class="indidcators">1</span></a>
+            </div>
+
+        </div>
+
+        <div class="records-feed">
+
+            
+                <div class="feed-card">
+                        <span class="feed-card-title">
+                            Passport Office asking for Bribes
+                        </span>
+                        <div class="feed-card-details">
+                            <h6>Created: 17th December 2018</h6>
+                        </div>
+                        <div class="feed-card-content">
+                            <p>A Senior official in the immigration department is under the 
+                                custody of the military intelligence (CMI) after he was arrested
+                                 for allegedly selling Ugandan passports to foreigners who would 
+                                 then use them for illegal activity. Lorem ipsum dolor sit amet 
+                                 consectetur adipisicing elit. Illum, nemo! Corrupti fugiat blanditiis 
+                                 quod consequatur tempore! Dicta praesentium nesciunt deserunt nulla,
+                                 eum fugiat doloribus, repellendus quis esse, quod quam consequatur.</p>
+                        </div>
+                        <!-- <div class="image-vid-map">
+                            <div class="image-record">
+                                <img src="https://www.dw.com/image/39268350_304.jpg" alt="">
+                            </div>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127672.80586566083!2d32.54982823316205!3d0.26643215547290144!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1545284640095" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+        
+                        </div> -->
+                        <div class="media-input2">
+                                <ul>
+                                        <li>
+                                            <button id="createModal2" class="btn-small-white">View Record</button>
+                                        </li>
+                                        <input type="file" id="real-file" hidden="hidden">
+                                        <li class="success-status">
+                                            Status: Approved<i class="far fa-check-circle"></i> 
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+            
+            <div class="feed-card">
+                <span class="feed-card-title">
+                    IGG Office not effective 
+                </span>
+                <div class="feed-card-details">
+                    <h6>Created: 17th December 2018</h6>
+                </div>
+                <div class="feed-card-content">
+                    <p>A Senior official in the immigration department is under the 
+                        custody of the military intelligence (CMI) after he was arrested
+                         for allegedly selling Ugandan passports to foreigners who would 
+                         then use them for illegal activity. Lorem ipsum dolor sit amet 
+                         consectetur adipisicing elit. Illum, nemo! Corrupti fugiat blanditiis 
+                         quod consequatur tempore! Dicta praesentium nesciunt deserunt nulla,
+                         eum fugiat doloribus, repellendus quis esse, quod quam consequatur.</p>
+                </div>
+                <!-- <div class="image-vid-map">
+                    <div class="image-record">
+                        <img src="https://www.dw.com/image/39268350_304.jpg" alt="">
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127672.80586566083!2d32.54982823316205!3d0.26643215547290144!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1545284640095" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                </div> -->
+                <div class="media-input2">
+                        <ul>
+                                <li>
+                                    <button id="createModal2" class="btn-small-white">View Record</button>
+                                </li>
+                                <input type="file" id="real-file" hidden="hidden">
+                                <li class="rejected-status">
+                                    Status: Rejected<i class="fas fa-times"></i> 
+                                </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                    <span class="feed-card-title">
+                        IGG Office not effective 
+                    </span>
+                    <div class="feed-card-details">
+                        <h6>Created: 17th December 2018</h6>
+                    </div>
+                    <div class="feed-card-content">
+                        <p>A Senior official in the immigration department is under the 
+                            custody of the military intelligence (CMI) after he was arrested
+                             for allegedly selling Ugandan passports to foreigners who would 
+                             then use them for illegal activity. Lorem ipsum dolor sit amet 
+                             consectetur adipisicing elit. Illum, nemo! Corrupti fugiat blanditiis 
+                             quod consequatur tempore! Dicta praesentium nesciunt deserunt nulla,
+                             eum fugiat doloribus, repellendus quis esse, quod quam consequatur.</p>
+                    </div>
+                    <!-- <div class="image-vid-map">
+                        <div class="image-record">
+                            <img src="https://www.dw.com/image/39268350_304.jpg" alt="">
+                        </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127672.80586566083!2d32.54982823316205!3d0.26643215547290144!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1545284640095" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+    
+                    </div> -->
+                    <div class="media-input2">
+                            <ul>
+                                    <li>
+                                        <button id="createModal2" class="btn-small-white">View Record</button>
+                                    </li>
+                                    <input type="file" id="real-file" hidden="hidden">
+                                    <li class="pending-status">
+                                        Status: Under Investigation<i class="far fa-eye"></i>
+                                    </li>
+                            </ul>
+                    </div>
+                </div>
+             
+
+        </div> 
+
+        <div class="">
+            <div class="profile-side">
+                    <img src="https://www.eharmony.co.uk/dating-advice/wp-content/uploads/2011/04/profilephotos-960x640.jpg" alt="Profile Pic">
+            
+                    <h1>Lisha Natile</h1>
+                    <h3>Phone: 0774656364</h3>
+            </div>
+    
+        </div>
+            
+    </section>
+
+    <footer class='wrapper-fixed'>
+        <p>&copy;2018 iReporter. All Rights Reserved</p>            
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- <button id="createModal">create record</button> -->
+        
+    <div id="createRecord" class="modal">
+            <div class="modal-content">
+                <div><span class="closeModal closebtn">&times;</span></div>
+                <div class="">
+                    <h2>Create Incident</h2>
+                    <form>
+                        <label>Title</label>
+                        <input type="text" placeholder="Enter Incident Title">
+                        <label>Describe Incident</label>
+                        <textarea name='Description' placeholder="Enter Description"></textarea>
+                        <label>Select Type of Incident</label>
+                        <select>
+                            <option></option>
+                            <option>Reg Flag</option>
+                            <option>Intervention</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="media-input">
+                    <ul>
+                        <li onclick="getLocation()">
+                            <i class="fas fa-map-marker-alt"></i>Enter Location
+                        </li>
+                        <input type="file" id="real-file" hidden="hidden">
+                        <li id="custom-button">
+                            <i class="far fa-image"></i>Add Image
+                        </li>
+                        <input type="file" id="real-file2" hidden="hidden">
+                        <li id="custom-button2">
+                            <i class="fas fa-video"></i>Add Video
+                        </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <!-- <button id="createModal2">view record</button> -->
+
+         <div id="createRecord2" class="modal2">
+             <div class="view-record record-container">
+                <div> <span class="closeModal2 closebtn">Close &times;</span>  </div>
+                <div>
+                    
+                    <div class="media-input">
+                        <ul>
+                            <li onclick="getLocation()">
+                                    <i class="fas fa-edit"></i>Edit Record
+                            </li>                                    
+                        </ul>
+                    </div>          
+                </div>
+                <div class="view-record-title">
+                    <h1>Passport Office asking for Bribes</h1>
+                    <h6>7th December 2018</h6>   
+                </div>
+                
+                <p>A Senior official in the immigration department is under the custody of the military intelligence (CMI) after he was arrested for allegedly selling Ugandan passports to foreigners who would then use them for illegal activity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nemo! Corrupti fugiat blanditiis quod consequatur tempore! Dicta praesentium nesciunt deserunt nulla, eum fugiat doloribus, repellendus quis esse, quod quam consequatur.</p>
+                <div class="image-record">
+                    <img src="https://www.dw.com/image/39268350_304.jpg" alt="">
+                </div>
+                <h3>Location</h3>
+                <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d127672.80586566083!2d32.54982823316205!3d0.26643215547290144!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1545284640095" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+             </div>
+         </div> 
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
