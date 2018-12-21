@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bakersen/iReporter2.svg?branch=master)](https://travis-ci.org/bakersen/iReporter2)
+
 # iReporter
 
 iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the
