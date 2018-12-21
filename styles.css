@@ -106,7 +106,7 @@ a:hover {
     background-color: #fff;
     border: 2px solid #5d001d;
     color: #5d001d;
-    border-radius: 30px;    
+    border-radius: 30px;
 }
 
 .btn-small-white:hover {
@@ -203,7 +203,7 @@ ul > li {
 }
 
 .intro-content{
-    padding: 140px 0 
+    padding: 140px 0
 }
 
 .intro-content h1 {
@@ -235,9 +235,9 @@ ul > li {
 }
 
 input[type=number],
-input[type=text],  
-input[type=email], 
-input[type=password], 
+input[type=text],
+input[type=email],
+input[type=password],
 textarea, select {
     width: 100%;
     padding: 12px 14px;
@@ -417,7 +417,17 @@ footer p{
     width: 90%;
     margin: 0 auto;
     background-color: #fafafa00;
-     
+
+}
+
+.main-user2 {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    padding: 0;
+    grid-column-gap: 3em;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fafafa00;
 }
 
 
@@ -434,10 +444,11 @@ footer p{
 }
 
 
+
 .feed-card-title {
     font-size: 17px;
     font-weight: 700;
-    color: #de1d41;   
+    color: #de1d41;
 }
 
 .feed-card-content {
@@ -451,10 +462,27 @@ footer p{
     grid-column-gap: 10px;
 }
 
-.profile-side{
+.profile-side, .admin-pic{
     display: grid;
     padding: 20px;
     justify-items: center;
+}
+
+.admin-pic {
+    background-color: #2d1e1b;
+    border: 0;
+}
+
+.admin-pic h3 {
+    color: #fff;
+}
+
+.admin-pic img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 .profile-side img {
@@ -468,6 +496,27 @@ footer p{
 .action-side {
     display: grid;
     padding: 20px;
+}
+
+.admin-action > a {
+    padding: 10px 0;
+}
+
+#admin-action.action-side {
+    padding: 0px;
+}
+
+#admin-action.action-side > a > ::before {
+    padding-left: 10px;
+}
+
+#admin-action.action-side > a {
+    padding: 10px 0;
+}
+
+#admin-action.action-side > a:hover {
+    color: #de1d41;
+    font-weight: 700;
 }
 
 .action-side > ul > li {
@@ -485,6 +534,11 @@ footer p{
     text-align: center;
     padding: 20px 0;
     font-size: 16px;
+}
+
+.action-side > a:hover {
+    color: #de1d41;
+    font-weight: 700;
 }
 
 .action-side > a:first-child {
@@ -521,6 +575,98 @@ footer p{
 .pending-status {
     color:#220296 !important;
 }
+
+/* ===============================================================================
+-------------------------------------ADMIN----------------------------------------
+=============================================================================== */
+
+
+.flags-feed {
+    padding: 30px;
+    background: #fff;
+}
+
+.user-record {
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr 6fr 5fr;
+    grid-column-gap: 8px;
+    padding: 5px 10px;
+    border-left: 5px solid #5d001d !important;
+    border: 1px solid #e8e8e8;
+    grid-auto-rows: minmax(100, auto);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.user-content {
+    display: grid;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d1e1b;
+}
+
+.date-created {
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-left: 5%;
+}
+
+.user-created{
+    color: #5d001d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-content p {
+    font-size: 13px;
+}
+
+.record-type {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+    color:#de1d41;
+}
+
+.media-admin {
+    padding: 10px 0;
+    display: grid;
+}
+
+.media-admin > ul {
+    align-self: center;
+}
+
+.media-admin ul > li {
+    display: inline-block;
+    color: #5d001d;
+    padding: 0 7px 0 0;
+    font-size: 12px;
+}
+
+.media-admin ul > li:hover, .media-input2 ul > li:focus {
+    cursor:pointer;
+    color: #de1d41;
+}
+
+.media-admin ul > li > ::before{
+    font-size: 15px;
+    padding: 0 5px 0 5px;
+}
+
+
+
 /* ===============================================================================
 --------------------------MEDIA QUERIES----------------------------------------
 =============================================================================== */
@@ -529,9 +675,9 @@ footer p{
 @media only screen and (max-width: 700px) {
     .logo-header img {
         max-width: 100%;
-        height: auto;        
+        height: auto;
     }
-    
+
     .main-nav > ul {
         display: none;
     }
@@ -558,19 +704,19 @@ footer p{
     }
 
     .intro-content{
-        padding: 50px 0 
+        padding: 50px 0
     }
 
     a.menu-bars {
         color: #fff;
         font-size: 16px;
     }
-    
+
     .dropdown {
         position: relative;
         display: inline-block;
     }
-    
+
       .dropdown-content {
         display: none;
         position: absolute;
@@ -579,16 +725,16 @@ footer p{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         top: 38px;
-        left: -70px;
+        left: -100px;
       }
-    
+
       .dropdown-content a {
         color: #fff;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
       }
-    
+
       .dropdown:hover .dropdown-content
        {
            display: block;
@@ -598,7 +744,7 @@ footer p{
 
     .view-record, .modal-content {
         width: 80%;
-       
+
     }
 
     .action-side, .profile-side {
@@ -609,21 +755,45 @@ footer p{
         display: grid;
         grid-template-columns: 1fr;
         padding: 40px 0;
-        width: 80%;         
+        width: 80%;
+    }
+
+    .user-record {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .media-admin ul > li {
+        padding: 20px 7px 0 0;
     }
 }
 
-@media only screen and (max-width: 770px and min-width 600px) {
+@media only screen and (max-width: 768px and min-width 600px) {
+
     .logo-header img {
         max-width: 100%;
         height: auto;
     }
-
     .main-user {
         display: grid;
         grid-template-columns: 4fr 7fr 1fr;
         padding: 40px 0;
         grid-column-gap: 1em;
-        width: 90%;         
+        width: 90%;
     }
+
+}
+
+@media only screen and (max-width: 1024px and min-width 768px) {
+    .user-record {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    /* .user-content {
+        grid-column: 2/4 !important;
+    }
+    .media-admin {
+        grid-column: 2/4;
+    } */
+
 }
