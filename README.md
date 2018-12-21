@@ -53,7 +53,7 @@ v1.0
 
 ## iReporter Demo UI Link
 
-https://github.com/bakersen/iReporter2
+https://bakersen.github.io/iReporter2/
 
 
 ## Acknowledgments
