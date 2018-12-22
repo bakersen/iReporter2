@@ -13,19 +13,7 @@ class Incident:
         self.videos = []
         self.comment = comment
     
-    def converts_json(self):
-        return {
-            'id':self.id, 
-            'createdOn': self.createdOn, 
-            'createBy': self.createdBy,
-            'type': self.type,
-            'location': self.location,
-            'status': self.status,
-            'Images':self.images,
-            'Videos':self.videos,
-            'comment':self.comment
-            }
-
+    
 class User:
     def __init__(self, id, firstname, lastname, othernames, email, phonenumber, username, registered, isAdmin):
         self.id = random.randint(2000, 2000000)
@@ -38,19 +26,6 @@ class User:
         self.registered = datetime.datetime.today().strftime('%Y-%m-%d')
         self.isAdmin = isAdmin
     
-    def converts_json(self):
-        return {
-            'id': self.id,
-            'firstname': self.firstname,
-            'lastname': self.lastname,
-            'othernames': self.othernames,
-            'email':self.email,
-            'phonenumber': self.phonenumber,
-            'usernamer': self.username,
-            'registered': self.registered,
-            'isAdmin': self.isAdmin
-        }
-
 
 
 
