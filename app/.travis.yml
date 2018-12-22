@@ -4,9 +4,8 @@ python:
   - '3.6'
 install:
   - "pip install -r /app/requirements.txt"
-
 script: 
-  - pytest
+  - pytest --cov=app
 
 after_success:
   - coveralls
