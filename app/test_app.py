@@ -1,5 +1,5 @@
 import unittest
-import requests
+from flask import requests
 from model import Incident, User
 import flask
 import json
