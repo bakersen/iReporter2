@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 
+import requests
+
 from model import Incident, User
 
 app = Flask(__name__)
@@ -12,9 +14,10 @@ def testing12():
     return 'Flask is working'
 
 @app.route('/api/v1/red-flags', methods=['POST'])
-def create_red_fag():
-    request_data = request.get_json()
+def create_red_flag():
 
+    request_data = request.get_json()
+    
     incident_id = request_data['id']
     createdOn = request_data['createdOn']
     createdBy = request_data['createBy']
@@ -27,9 +30,23 @@ def create_red_fag():
 
     new_red_flag = Incident(incident_id, createdOn, createdBy, location, typeof, status, images, videos, comment)
 
-    redflags.append(new_red_flag)
+    
+    # if request.status_code != 201:
+    #     return jsonify({'status':'404', 'Error': 'Url not found Or Incorrect'}), 400
 
-    return jsonify({"status":201, "New Red Flag": new_red_flag.__dict__})
+    redflags.append(new_red_flag.__dict__)
+
+    print(redflags)
+
+    return jsonify({"status":201, "data": new_red_flag.__dict__}), 201
+    
+@app.route('/api/v1/red-flags', methods=['GET'])
+def get_all_flags():
+
+    if len(redflags) == 0:
+        return jsonify({'status':'404', 'Data': 'No record available'}), 404
+    
+    return jsonify({'redflags': redflags})    
 
 
 if __name__ == '__main__':
