@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/bakersen/iReporter2.svg?branch=app)](https://travis-ci.org/bakersen/iReporter2)
 
+[![Coverage Status](https://coveralls.io/repos/github/bakersen/iReporter2/badge.svg?branch=master)](https://coveralls.io/github/bakersen/iReporter2?branch=master)
+
 # iReporter
 
 iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the
