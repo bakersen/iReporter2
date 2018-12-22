@@ -44,7 +44,13 @@ def get_all_flags():
     if len(redflags) == 0:
         return jsonify({'status':'404', 'Data': 'No record available'}), 404
     
-    return jsonify({'redflags': redflags})    
+    return jsonify({'redflags': redflags}) 
+
+# @app.route('/api/v1/red-flags/<string:location>', methods=['GET'])
+# def get_flag_location(location):
+#     for value in redflags:
+#         if redflags['location'] == location:
+            
 
 
 if __name__ == '__main__':
