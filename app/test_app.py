@@ -1,5 +1,4 @@
 import unittest
-from flask import requests
 from model import Incident, User
 import flask
 import json
@@ -25,7 +24,7 @@ class TestEndpoints(unittest.TestCase):
             'comment':'Self test comment',
             } 
 
-        response = requests.post('http://127.0.0.1:5000/api/v1/red-flags', json=flag_data)
+        response = self.app_tester.post('http://127.0.0.1:5000/api/v1/red-flags', json=flag_data)
         status = 201
         self.assertEqual(response.status_code, status)
 

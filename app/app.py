@@ -1,7 +1,5 @@
 from flask import Flask, jsonify, request
 
-import requests
-
 from model import Incident, User
 
 app = Flask(__name__)
