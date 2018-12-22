@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/bakersen/iReporter2.svg?branch=master)](https://travis-ci.org/bakersen/iReporter2)
+[![Build Status](https://travis-ci.org/bakersen/iReporter2.svg?branch=app)](https://travis-ci.org/bakersen/iReporter2)
 
 # iReporter
 
