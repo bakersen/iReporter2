@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/bakersen/iReporter2.svg?branch=app)](https://travis-ci.org/bakersen/iReporter2)
 
-[![Coverage Status](https://coveralls.io/repos/github/bakersen/iReporter2/badge.svg?branch=app)](https://coveralls.io/github/bakersen/iReporter2?branch=app)
+<!-- [![Coverage Status](https://coveralls.io/repos/github/bakersen/iReporter2/badge.svg?branch=app)](https://coveralls.io/github/bakersen/iReporter2?branch=app) -->
+
+[![Coverage Status](https://coveralls.io/repos/github/bakersen/iReporter2/badge.svg)](https://coveralls.io/github/bakersen/iReporter2)
 
 # iReporter
 
