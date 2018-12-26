@@ -747,7 +747,7 @@ footer p{
 
     }
 
-    .action-side, .profile-side {
+    .action-side, .profile-side, .admin-side {
         display:none;
     }
 
@@ -758,6 +758,11 @@ footer p{
         width: 80%;
     }
 
+    .main-user2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .user-record {
         display: grid;
         grid-template-columns: 1fr;
@@ -766,6 +771,7 @@ footer p{
     .media-admin ul > li {
         padding: 20px 7px 0 0;
     }
+
 }
 
 @media only screen and (max-width: 768px and min-width 600px) {
