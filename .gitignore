@@ -2,4 +2,6 @@
 _pycache_
 
 .gitignore.swp
+.vscode
+.pytest_cache
 
