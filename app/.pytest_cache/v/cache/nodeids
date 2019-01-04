@@ -1,4 +1,0 @@
-[
-  "test_app.py::TestEndpoints::test_incident_input",
-  "test_app.py::TestEndpoints::test_post_status"
-]

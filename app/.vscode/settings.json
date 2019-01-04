@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\baker\\.virtualenvs\\flask_app-TD5_Kpuc\\Scripts\\python.exe",
-    "python.unitTest.pyTestArgs": [
-        "."
-    ],
-    "python.unitTest.unittestEnabled": false,
-    "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.pyTestEnabled": true
-}
