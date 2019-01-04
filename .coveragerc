@@ -1,6 +1,8 @@
 omit
 
 [report]
-          include=
 
-test_app.py
+omit=
+
+*/ui/*
+*/app/*
