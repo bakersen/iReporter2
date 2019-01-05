@@ -1,6 +1,8 @@
 [report]
 
-omit = */home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/*
+omit = 
+*/home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages/*
+*/api/models/*
 
 [html]
 directory = coverage_html_report
