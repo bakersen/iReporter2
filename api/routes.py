@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 
-from model import Incident, User
+from api.model import Incident, User
 
 app = Flask(__name__)
 

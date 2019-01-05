@@ -1,14 +1,14 @@
 import unittest
-from model import Incident, User
+from api.model import Incident, User
 import flask
 import json
 import datetime
-from app import app
+from api import routes
 
 class TestEndpoints(unittest.TestCase):
 
     def setUp(self):
-        self.app_tester = app.test_client()
+        self.app_tester = routes.app.test_client()
 
     def test_post_status(self): 
 
