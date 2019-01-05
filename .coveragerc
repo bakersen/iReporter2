@@ -1,5 +1,0 @@
-[report]
-
-omit= 
-*/home/travis/virtualenv/*
-*
