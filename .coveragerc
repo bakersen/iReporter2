@@ -1,6 +1,6 @@
 [report]
 omit =
-*/home/*
+*/home/travis/virtualenv/*
 
 [html]
 directory = coverage_html_report
