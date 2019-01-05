@@ -2,4 +2,3 @@
 
 omit= 
 */home/travis/virtualenv/*
-*/tests/*
