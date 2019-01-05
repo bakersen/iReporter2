@@ -1,5 +1,4 @@
 [report]
 omit = 
-*/home/travis/virtualenv/*
-* 
+*/home/travis/virtualenv/** 
 *api/model.py/*
