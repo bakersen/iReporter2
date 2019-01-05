@@ -1,6 +1,5 @@
 [report]
-omit =
-*/home/*
+
 
 [html]
 directory = coverage_html_report
